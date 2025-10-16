@@ -34,6 +34,7 @@
     }
     
     #time {
+        margin: 0 auto;
         width: 50%;
         box-shadow: 5px5px5px;
         color: #ff0000;
@@ -64,7 +65,7 @@
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
     
