@@ -218,6 +218,14 @@
     }
     //ButtonEがクリックされたときの処理
     function btnEClick(e){
+        active = false;
+        period = 3 * 60; 
+        etime = 0; 
+        
+        $("#minute").val(3);
+        $("#second").val(0);
+        $("#time").html("経過時間： 0");
+        $("#remain").html("残り時間： " + period);
     }
     //ButtonFがクリックされたときの処理
     function btnFClick(e){
