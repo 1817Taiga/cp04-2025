@@ -229,6 +229,29 @@
     }
     //ButtonFがクリックされたときの処理
     function btnFClick(e){
+        var currentMinutes = parseInt( $("#minute").val() );
+        var currentSeconds = parseInt( $("#second").val() );
+        
+        // 1秒増やす
+        currentSeconds += 1;
+        
+        // 60秒を超えた場合の処理
+        if (currentSeconds >= 60) {
+            currentMinutes += 1;
+            currentSeconds = 0;
+        }
+        
+        // 新しい値を入力フィールドに反映
+        $("#minute").val(currentMinutes);
+        $("#second").val(currentSeconds);
+        
+        // タイマーの合計時間(period)を再計算
+        period = currentMinutes * 60 + currentSeconds;
+        
+        // 表示をリセット
+        etime = 0;
+        $("#time").html("経過時間： 0");
+        $("#remain").html("残り時間： " + period);
     }
 
  
