@@ -39,7 +39,7 @@
             btnCClick(e);
         });
         $('#btnD').click(function(e) {
-            btnCClick(e);
+            btnDClick(e);
         });
         init();
     });
@@ -187,7 +187,6 @@
     function btnAClick(e){
         active = true;
         startTime = new Date();
-        
     }
 
     // ButtonBがクリックされた時の処理
@@ -205,8 +204,11 @@
         $("#remain").html("残り時間： " + period);
     }
     //ButtonDがクリックされたときの処理
+    function btnDClick(e){
+        active = true;
+        startTime = new Date() - etime * 1000;
+    }
 
-    
  
     // 繰り返し実行する処理
     function timer(){  
