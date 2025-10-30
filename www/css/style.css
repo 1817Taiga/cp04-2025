@@ -1,6 +1,6 @@
 /**/
     body {
-        background: skyblue;
+        background: rgb(238, 236, 115);
     }
     button {
         color: blue;
@@ -53,22 +53,24 @@
     }
     
     #btnA {
-        background-color: yellow;
-        color: green;
+        color: blue;
         font-size: 20px;
         position:absolute; top:380px; left:2%; width:25%; height:60px; 
     }
     
     #btnB {
+        color: red;
         font-size: 20px;
         position:absolute; top:380px; left:26%; width:25%; height:60px; 
     }
 
     #btnC {
+        color: purple;
         font-size: 20px;
         position:absolute; top:380px; left:50%; width:25%; height:60px; 
     }
     #btnD {
+        color: green;
         font-size: 20px;
         position:absolute; top:380px; left:75%; width:25%; height:60px; 
     }
