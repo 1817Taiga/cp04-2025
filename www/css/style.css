@@ -74,15 +74,25 @@
         font-size: 20px;
         position:absolute; top:380px; left:75%; width:25%; height:60px; 
     }
+    #btnE {
+        color: green;
+        font-size: 20px;
+        position:absolute; top:440px; left:60%; width:25%; height:60px; 
+    }
+    #btnF {
+        color: green;
+        font-size: 20px;
+        position:absolute; top:440px; left:35%; width:25%; height:60px; 
+    }
     
     #minute {
         font-size: 30px;
-        position:absolute; top:450px; left:60px; width:80px; height:40px;   
+        position:absolute; top:500px; left:60px; width:80px; height:40px;   
     }
     
     #second {
         font-size: 30px;
-        position:absolute; top:450px; left:190px; width:80px; height:40px;   
+        position:absolute; top:500px; left:190px; width:80px; height:40px;   
     }
     
     input[type=number] {text-align: right;}

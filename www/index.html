@@ -41,6 +41,12 @@
         $('#btnD').click(function(e) {
             btnDClick(e);
         });
+        $('#btnE').click(function(e) {
+            btnEClick(e);
+        });
+        $('#btnF').click(function(e) {
+            btnFClick(e);
+        });
         init();
     });
     
@@ -167,6 +173,8 @@
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
         $('#btnD').prop('disabled', false);
+        $('#btnE').prop('disabled', false);
+        $('#btnF').prop('disabled', false);
         
     }
 
@@ -208,6 +216,12 @@
         active = true;
         startTime = new Date() - etime * 1000;
     }
+    //ButtonEがクリックされたときの処理
+    function btnEClick(e){
+    }
+    //ButtonFがクリックされたときの処理
+    function btnFClick(e){
+    }
 
  
     // 繰り返し実行する処理
@@ -239,7 +253,9 @@
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button> 
-    <button id="btnD">Restart</button>  
+    <button id="btnD">Restart</button> 
+    <button id="btnE">3</button>
+    <button id="btnF">UP</button>
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=45 >
 </body>
